@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #f3f3f3;
+    min-height: 100vh;
+    font-size: calc(0.3125vw + 10px);
+}
+
+.ergonomics {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ergonomics__content {
+    /*border: 1px solid green;*/
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .ergonomics__content {
+        width: 100%;
+        margin: 0.848125rem 0 0 0.7575rem;
+    }
+}
+
+.ergonomics__title {
+    margin: 0 0 2rem 0;
+    color: #0B64FE;
+    font-size: 3.875rem;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .ergonomics__title {
+        font-size: 2.375rem;
+        font-weight: 700;
+        font-family: "Bebas Neue", sans-serif;
+    }
+}
+
+.ergonomics__description {
+    color: #181818;
+    font-size: 1.375rem;
+    line-height: 1.7;
+    margin: 0 0 1.5rem 0;
+    font-weight: 300;
+}
+
+.ergonomics__description:last-of-type {
+    margin: 0;
+}
+
+.ergonomics__engagement {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+    width: 60%;
+    /*border: 1px solid red;*/
+}
+
+@media (max-width: 768px) {
+    .ergonomics__engagement_desktop {
+        display: none;
+    }
+}
+
+.ergonomics__engagement_tablet {
+    width: 100%;
+    min-height: unset;
+}
+
+@media (min-width: 769px) {
+    .ergonomics__engagement_tablet {
+        display: none;
+    }
+}
+
+.ergonomics__image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.desk {
+    position: relative;
+    /*border: 1px solid blue;*/
+}
+
+.desk__top {
+    position: relative;
+}
+
+.desk__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.ergonomics__buttons {
+    /*border: 1px solid red;*/
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    transform: translateX(-50%);
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .ergonomics__buttons{
+        column-gap: 0.75rem;
+    }
+}
+
+.ergonomics__button {
+    width: 12.51375rem;
+    height: 12.51375rem;
+    border-radius: 50%;
+    outline: 0;
+    border: none;
+    background: #A6FFFF;
+    font-size: 2.511875rem;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .ergonomics__button {
+        width: 3.821875rem;
+        height: 3.821875rem;
+        font-size: 0.7675rem;
+    }
+}
+
+.ergonomics__button:hover {
+    cursor: pointer;
+}
